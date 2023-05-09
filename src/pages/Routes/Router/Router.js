@@ -1,5 +1,6 @@
 import About from "../../About/About";
 import Home from "../../Home/Home/Home";
+import HomeBanners from "../../Home/HomeBanner/HomeBanners";
 import Login from "../../Login/Login";
 import Signin from "../../Signin/Signin";
 import PriveteRoute from "../PriveteRoute";

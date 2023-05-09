@@ -19,8 +19,8 @@ const Navbar = () => {
         <Link to='/signup'  onClick={() => setState(!state)}> <li className='lg:ml-5 text-lg lg:mt-0 mt-4 font-[500]'>About</li></Link>
         </>
     return (
-        <nav className={` ${state ? 'mobileNavSticky lg:text-white textBlack' : 'NavSticky'} w-full border-b md:border-0 md:static`}>
-        <div className="items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8">
+        <nav className={` ${state ? 'mobileNavSticky lg:text-white textBlack' : 'NavSticky'} w-full  border-b md:border-0 md:static`}>
+        <div className="items-center lg:w-[90%] lg:mx-auto px-4 max-w-screen-xl mx-auto md:flex md:px-8">
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
                   <a href="javascript:void(0)">
                       <img
