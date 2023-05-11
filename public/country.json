@@ -1,0 +1,55 @@
+[{
+    "Country_id": 0,
+    "Country_name": "ITALY",
+    "picture": "https://static.saltinourhair.com/wp-content/uploads/2023/04/11114914/taormina-italy-12-1082x1440.jpg",
+    "headline": "12 Best Things to do in Taormina, Sicily"
+  },
+  {
+    "Country_id": 1,
+    "Country_name": "Malaysia",
+    "picture": "https://static.saltinourhair.com/wp-content/uploads/2020/01/23123153/malaysia-2-week-travel-guide-600x600.jpg",
+    "headline": "Malaysia Travel Guide: Tips for the Ultimate Itinerary"
+  },
+  {
+    "Country_id": 2,
+    "Country_name": "FRANCE",
+    "picture": "https://static.saltinourhair.com/wp-content/uploads/2021/11/19112437/provence-Fontaine-de-Vaucluse-1-1128x1440.jpg",
+    "headline": "8 Best Things to do in Provence, France"
+  },
+  {
+    "Country_id": 3,
+    "Country_name": "Bali",
+    "picture": "https://static.saltinourhair.com/wp-content/uploads/2019/11/23125318/things-to-do-munduk-Handara-Gate-1747x1440.jpg",
+    "headline": "The Ultimate Bali Travel Guide (3 Weeks)"
+  },
+  {
+    "Country_id": 4,
+    "Country_name": "Spain",
+    "picture": "https://static.saltinourhair.com/wp-content/uploads/2022/03/25104124/madrid-12-1440x1440.jpg",
+    "headline": "Best Things to do in Madrid, Spain"
+  },
+  {
+    "Country_id": 5,
+    "Country_name": "Costa Rica",
+    "picture": "https://static.saltinourhair.com/wp-content/uploads/2021/12/30163554/uvita-22-1152x1440.jpg",
+    "headline": "Costa Rica Itinerary: Ultimate 7-day Travel Guide"
+  },
+  {
+    "Country_id": 6,
+    "Country_name": "Morocco",
+    "picture": "https://static.saltinourhair.com/wp-content/uploads/2017/04/23115129/best-restaurant-marrakech-morocco-1173x1440.jpg",
+    "headline": "Morocco Travel Guide: Best Things To Do (10-day Itinerary)"
+  },
+  {
+    "Country_id": 7,
+    "Country_name": "FRANCE",
+    "picture": "https://static.saltinourhair.com/wp-content/uploads/2022/05/05115447/paris-best-things-to-do-2-1440x1440.jpg",
+    "headline": "12 Best Things To Do in Paris: The Ultimate 3-day Trip"
+  },
+  {
+    "Country_id": 8,
+    "Country_name": "THAILAND",
+    "picture": "https://static.saltinourhair.com/wp-content/uploads/2020/02/23122934/ultimate-travel-guide-koh-lipe-island.jpg",
+    "headline": "13 Best Things To Do in Bangkok"
+  }
+]

@@ -3,6 +3,7 @@ import './Signin.css';
 import { useForm } from 'react-hook-form';
 import { AuthContext } from '../Contexts/AuthProvider';
 import { Link, useNavigate } from 'react-router-dom';
+import Spinner from '../Spinner/Spinner';
 const Signin = () => {
     const navigate=useNavigate();
     const [loading,setLoading]=useState(false);
@@ -41,7 +42,7 @@ const Signin = () => {
          setLoading(false);
     }
     if(loading){
-        return <p>Loading...</p>
+        return <Spinner></Spinner>
     }
     return (
         <div className='lg:py-20 py-10 signin-bg'>

@@ -4,6 +4,7 @@ import Slider from 'react-slick';
 import banner from '../../../assets/New folder/banner.jpg';
 import banner2 from '../../../assets/New folder/banner2.png';
 import banner3 from '../../../assets/New folder/banner2.png';
+import Spinner from '../../Spinner/Spinner';
 
 const HomeBanners = () => {
 
@@ -21,7 +22,7 @@ const HomeBanners = () => {
             })
     }, [])
     if (loading) {
-        return <p className='text-xl text-center'>Loading</p>
+        return <Spinner></Spinner>
     }
     console.log(data);
     function SamplePrevArrow(props) {
