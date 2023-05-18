@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
+import ThingsTodo from '../ThingsTodo/ThingsTodo';
 import Spinner from '../Spinner/Spinner';
-import Country from '../Country/Country';
+import Places from '../Places/Places';
 import Slider from 'react-slick';
-import MiniCategories from '../MiniCategories/MiniCategories';
 
-const Countries = () => {
+const PlaceAndThingsToDo = () => {
     const [datas, setDatas] = useState([]);
     const [loading, setLoading] = useState(false);
     useEffect(() => {
@@ -16,9 +16,6 @@ const Countries = () => {
                 setLoading(false)
             })
     }, []);
-    if (loading) {
-        return <Spinner></Spinner>
-    }
     function SampleNextArrow(props) {
         const { className, style, onClick } = props;
         return (
@@ -39,14 +36,14 @@ const Countries = () => {
             />
         );
     }
-   
+
     const settings = {
-        dots: true,
+        dots: false,
         className: "center",
         centerMode: true,
         infinite: true,
         centerPadding: "30px",
-        slidesToShow: 3,
+        slidesToShow: 2,
         slidesToScroll: 2,
         speed: 300,
         autoplay: true,
@@ -81,74 +78,26 @@ const Countries = () => {
         ]
 
     };
-
-    const settings2 = {
-        dots: false,
-        className: "center",
-        centerMode: true,
-        infinite: true,
-        centerPadding: "60px",
-        slidesToShow: 6,
-        slidesToScroll: 2,
-        speed: 300,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        nextArrow: <SampleNextArrow></SampleNextArrow>,
-        prevArrow: <SamplePrevArrow></SamplePrevArrow>,
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 4,
-                    slidesToScroll: 4,
-                    infinite: true,
-                    dots: true
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    initialSlide: 1
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]
-
-    };
+    if (loading) {
+        return <Spinner></Spinner>
+    }
     return (
-        <div>
-            <div className='my-10 lg:block none'>
-                <Slider {...settings}>
-                    {
-                        datas?.map(data => <Country
-                            key={data._id}
-                            data={data}
-                        ></Country>)
-                    }
-                </Slider>
-            </div>
-           
-            <div className='lg:mb-10'>
-                <Slider {...settings2}>
-                    {
-                        datas?.map(data => <MiniCategories
-                            key={data._id}
-                            data={data}
-                        ></MiniCategories>)
-                    }
-                </Slider>
-            </div>
+        <div className='flex my-10 flex-col lg:flex-row'>
+            <ThingsTodo></ThingsTodo>
+          
+         <div className='lg:w-[60%] w-full'>
+         <Slider {...settings}>
+                {
+                    datas.map(data => <Places
+                        key={data._id}
+                        data={data}
+                    ></Places>)
+                }
+            </Slider>
+         </div>
+          
         </div>
-
     );
 };
 
-export default Countries;
+export default PlaceAndThingsToDo;

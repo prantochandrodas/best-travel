@@ -2,9 +2,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Country = ({ data }) => {
-    console.log(data);
+    const setcountryId=(id)=>{
+        localStorage.setItem('id',id);
+    }
+    // console.log(data);
+    // const getLocalStoreAgeId = localStorage.getItem('id');
+
+    
     return (
-        <Link>
+        <Link to={`/countryDetails`} onClick={()=>setcountryId(data.Country_id)}>
             <a href="#" class="block">
                 <img
                     alt="Signage"

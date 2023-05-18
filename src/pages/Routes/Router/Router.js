@@ -1,8 +1,16 @@
 import About from "../../About/About";
+import AllPackages from "../../AllPackages/AllPackages";
+import Bookings from "../../Bookings/Bookings";
+import CountryDetails from "../../CountryDetails/CountryDetails";
 import Home from "../../Home/Home/Home";
 import HomeBanners from "../../Home/HomeBanner/HomeBanners";
 import Login from "../../Login/Login";
+import PackageDetails from "../../PackageDetails/PackageDetails";
+import Packages from "../../Packages/Packages";
+import PlaceAndThingsToDo from "../../PlaceAndThingsToDo/PlaceAndThingsToDo";
 import Signin from "../../Signin/Signin";
+import Spinner from "../../Spinner/Spinner";
+import ThingsTodo from "../../ThingsTodo/ThingsTodo";
 import PriveteRoute from "../PriveteRoute";
 
 const { createBrowserRouter } = require("react-router-dom");
@@ -27,9 +35,27 @@ export const router =createBrowserRouter([
             },
             {
                 path:'/about',
-                element:<PriveteRoute>
-                    <About></About>
-                </PriveteRoute>
+                element:<About></About>
+            },
+            {
+                path:'/thing',
+                element:<Packages></Packages>
+            },
+            {
+                path:'/countryDetails',
+                element:<CountryDetails></CountryDetails>
+            },
+            {
+                path:'/packageDetails',
+                element:<PriveteRoute><PackageDetails></PackageDetails></PriveteRoute>
+            },
+            {
+                path:'/allPackage',
+                element:<AllPackages></AllPackages>
+            },
+            {
+                path:'/booking',
+                element:<PriveteRoute><Bookings></Bookings></PriveteRoute>
             }
         ]
     }

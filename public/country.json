@@ -1,55 +1,98 @@
-[{
-    "Country_id": 0,
-    "Country_name": "ITALY",
-    "picture": "https://static.saltinourhair.com/wp-content/uploads/2023/04/11114914/taormina-italy-12-1082x1440.jpg",
-    "headline": "12 Best Things to do in Taormina, Sicily"
-  },
+[
   {
-    "Country_id": 1,
-    "Country_name": "Malaysia",
-    "picture": "https://static.saltinourhair.com/wp-content/uploads/2020/01/23123153/malaysia-2-week-travel-guide-600x600.jpg",
-    "headline": "Malaysia Travel Guide: Tips for the Ultimate Itinerary"
-  },
-  {
-    "Country_id": 2,
-    "Country_name": "FRANCE",
-    "picture": "https://static.saltinourhair.com/wp-content/uploads/2021/11/19112437/provence-Fontaine-de-Vaucluse-1-1128x1440.jpg",
-    "headline": "8 Best Things to do in Provence, France"
-  },
-  {
-    "Country_id": 3,
-    "Country_name": "Bali",
-    "picture": "https://static.saltinourhair.com/wp-content/uploads/2019/11/23125318/things-to-do-munduk-Handara-Gate-1747x1440.jpg",
-    "headline": "The Ultimate Bali Travel Guide (3 Weeks)"
-  },
-  {
-    "Country_id": 4,
-    "Country_name": "Spain",
-    "picture": "https://static.saltinourhair.com/wp-content/uploads/2022/03/25104124/madrid-12-1440x1440.jpg",
-    "headline": "Best Things to do in Madrid, Spain"
-  },
-  {
-    "Country_id": 5,
-    "Country_name": "Costa Rica",
-    "picture": "https://static.saltinourhair.com/wp-content/uploads/2021/12/30163554/uvita-22-1152x1440.jpg",
-    "headline": "Costa Rica Itinerary: Ultimate 7-day Travel Guide"
-  },
-  {
-    "Country_id": 6,
-    "Country_name": "Morocco",
-    "picture": "https://static.saltinourhair.com/wp-content/uploads/2017/04/23115129/best-restaurant-marrakech-morocco-1173x1440.jpg",
-    "headline": "Morocco Travel Guide: Best Things To Do (10-day Itinerary)"
-  },
-  {
-    "Country_id": 7,
-    "Country_name": "FRANCE",
-    "picture": "https://static.saltinourhair.com/wp-content/uploads/2022/05/05115447/paris-best-things-to-do-2-1440x1440.jpg",
-    "headline": "12 Best Things To Do in Paris: The Ultimate 3-day Trip"
-  },
-  {
-    "Country_id": 8,
-    "Country_name": "THAILAND",
+    "package_id": "645e4e65429f471e40c7b248",
+    "index": 0,
+    "isActive": false,
+    "price":1000,
     "picture": "https://static.saltinourhair.com/wp-content/uploads/2020/02/23122934/ultimate-travel-guide-koh-lipe-island.jpg",
-    "headline": "13 Best Things To Do in Bangkok"
+    "name": "Switzerland & France Tour Package Price in Bangladesh",
+    "Seller_Location": "Bangladesh",
+    "Tour_Location": "International",
+    "Duration": "7 Nights & 8 Days",
+    "Destination": "Switzerland & France",
+    "email": "jarvisjarvis@dadabase.com",
+    "about": "Switzerland & france tour package price in bangladesh is ৳ 156,000. Seven nights and eight days long tour in Switzerland and France. After flying from Bangladesh, this journey starts in Paris. Visitors will experience a day tour of Paris, a full-day tour of Lucerne, a full day of sightseeing in Zurich, a full day of adventure in Interlaken, and a full day of shopping. They will also view the Eiffel Tower and Mount Titlis.",
+    "Guide_Service": "Yes",
+    "hotel": "Yes"
+  },
+  {
+    "package_id": "645e4e65d74e2d7b1966acf0",
+    "index": 1,
+    "isActive": true,
+    "price":750,
+    "picture": "https://static.saltinourhair.com/wp-content/uploads/2022/05/05115447/paris-best-things-to-do-2-1440x1440.jpg",
+    "name": "4-Night 5-Day Sri Lanka Tour Package Price in Bangladesh",
+    "Seller_Location": "Bangladesh",
+    "Tour_Location": "International",
+    "Duration": "4-Night, 5-Day",
+    "Destination": "Sri Lanka",
+    "email": "kaywaller@dadabase.com",
+    "about": "4-night 5-day sri lanka tour package price in bangladesh is ৳ 75,000. This is a 4-night and 5-day Sri Lanka tour package. In this package you can stay overnight in a four-star hotel and go sightseeing in Sri Lanka at a very low cost. Breakfast, lunch and dinner will be included in this package. Places to visit in this tour include Botanical Garden, Temple of Tooth City Tour View Point, Madhuri River Tour, Turtle Hatchery Visit and other attractions.",
+    "Guide_Service": "yes",
+    "hotel": "yes"
+  },
+  {
+    "package_id": "645e4e6580ffc88ea09f5a41",
+    "index": 2,
+    "isActive": true,
+    "price":500,
+    "picture": "https://static.saltinourhair.com/wp-content/uploads/2017/04/23115129/best-restaurant-marrakech-morocco-1173x1440.jpg",
+    "name": "Hello Maldives 4 Days 3 Nights Tour Package Price in Bangladesh",
+    "Seller_Location": "Bangladesh",
+    "Tour_Location": "International",
+    "Duration": "04 Days 03 Nights",
+    "Destination": "Maldives",
+    "email": "kelleyferrell@dadabase.com",
+    "about": "Hello maldives 4 days 3 nights tour package price in bangladesh is ৳ 24,500. This hello Maldives tour package includes 4 days and 3 nights. The package provides daily breakfast, Island transfer by SIC speedboat/ferry shuttle basis, Hotel room double/single as per the hotel's category, and airport pick and drop transfers on a private basis. The Maldives is a wonderful place. The Maldives provides a wonderful feeling for a horse in the middle of the ocean.",
+     "Guide_Service": "yes",
+    "hotel": "yes"
+  },
+  {
+    "package_id": "645e4e6566aa680d026ce9a7",
+    "index": 3,
+    "isActive": false,
+    "price":1000,
+    "picture": "https://static.saltinourhair.com/wp-content/uploads/2021/12/30163554/uvita-22-1152x1440.jpg",
+    "name": "5-Day 4-Night Honeymoon Tour Package in Maldives Price in Bangladesh",
+   "Seller_Location": "Bangladesh",
+    "Tour_Location": "International",
+    "Duration": "5 Days, 4 Nights",
+    "Destination": "Maldives",
+    "email": "penningtonbriggs@dadabase.com",
+    "about": "5-day 4-night honeymoon tour package in maldives price in bangladesh is ৳ 79,500. One of the most beautiful cities in the Maldives is a mixture of natural beauty and modernity. There are opportunities to travel at a very low cost. You and your family can enjoy the beauty together. This tour package includes 5 days and 4 nights. This tour package has various other facilities including air ticket, airport, hotel stay, and breakfast including all kinds of taxes from Dhaka.",
+     "Guide_Service": "yes",
+    "hotel": "yes"
+  },
+  {
+    "package_id": "645e4e656eaad67c8b1512d3",
+    "index": 4,
+    "isActive": true,
+    "price":800,
+    "picture": "https://static.saltinourhair.com/wp-content/uploads/2019/11/23125318/things-to-do-munduk-Handara-Gate-1747x1440.jpg",
+    "name": "Malaysia 5 Days 4 Nights Holiday Tour Package Price in Bangladesh",
+   "Seller_Location": "Bangladesh",
+    "Tour_Location": "International",
+    "Duration": "5 days & 4 nights",
+    "Destination": "Malaysia, Penang Airport",
+    "email": "cheryltrujillo@dadabase.com",
+    "about": "Malaysia 5 days 4 nights holiday tour package price in bangladesh is ৳ 24,000. Malaysia tour package includes 2-nights accommodation on a twin or single share basis at Kuala lumpur. This package includes only brakfast. You get plenty of time for sopping and visiting malls. After that, 2-nights accommodation at Penang.",
+     "Guide_Service": "yes",
+    "hotel": "yes"
+  },
+  {
+    "package_id": "645e4e656eaad67c8b1512d9",
+    "index": 5,
+    "isActive": true,
+    "price":600,
+    "picture": "https://www.bdstall.com/asset/product-image/giant_93708.jpg",
+    "name": "Turkey Holiday Package 6-Night 7-Day Price in Bangladesh",
+   "Seller_Location": "Bangladesh",
+    "Tour_Location": "International",
+    "Duration": "6 Nights / 7 Days",
+    "Destination": "Istanbul , Cappadocia",
+    "email": "daughertysolis@dadabase.com",
+    "about": "Turkey holiday package 6-night 7-day price in bangladesh is ৳ 62,000. Licensed professional local guide in the English language will be provided while visiting Istanbul and Cappadocia, entrance fee will be beard by tourist, visit attractive place of Turkey and enjoy beautiful scenarios and ancient places.",
+     "Guide_Service": "yes",
+    "hotel": "yes"
   }
 ]

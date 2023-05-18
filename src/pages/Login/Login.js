@@ -2,27 +2,47 @@ import React, { useContext, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../Contexts/AuthProvider';
+import { GoogleAuthProvider } from 'firebase/auth';
 
 const Login = () => {
-    const {loginUser}=useContext(AuthContext);
+    const {loginUser,createUserWithGoogle}=useContext(AuthContext);
+    const [loading,setLoading]=useState(false);
     const [loginError,SetLoginError]=useState('');
     const location =useLocation();
     const navigate=useNavigate();
-
+    const provider = new GoogleAuthProvider();
     const from =location.state?.from?.pathname || '/';
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
     const onSubmit = data => {
+        setLoading(true);
         SetLoginError('')
         loginUser(data.email,data.password)
         .then(result=>{
             const user=result.user;
             console.log(user);
             navigate(from,{replace:true});
+            setLoading(false);
         })
         .catch(error=>{
+            setLoading(false);
             SetLoginError(error.message);
         });
     };
+
+    const handelGoogleSignUp=()=>{
+        setLoading(true);
+        createUserWithGoogle(provider)
+        .then(result=>{
+            const user=result.user;
+            console.log(user);
+            navigate(from,{replace:true});
+            setLoading(false);
+        })
+        .catch(error=>{
+            SetLoginError(error.message);
+            setLoading(false);
+        })
+    }
     return (
         <div class="flex w-full max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800 lg:max-w-4xl">
             <div class="hidden bg-cover lg:block lg:w-1/2" style={{ backgroundImage: `url('https://thumbs.dreamstime.com/b/group-friend-team-asian-young-women-hikers-walking-adventure-backpack-mountain-sunset-traveler-life-going-trip-139746558.jpg')`, backgroundPosition: 'center' }}></div>
@@ -46,7 +66,7 @@ const Login = () => {
                         </svg>
                     </div>
 
-                    <span class="w-5/6 px-4 py-3 font-bold text-center">Sign in with Google</span>
+                    <span class="w-5/6 px-4 py-3 font-bold text-center" onClick={handelGoogleSignUp}>Sign in with Google</span>
                 </a>
                 {loginError?<p className='text-red-600'>{loginError}</p>:<></>}
                 {/* email  */}

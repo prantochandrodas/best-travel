@@ -16,7 +16,7 @@ const Signin = () => {
         createUser(data.email,data.password)
         .then(result=>{
             const user=result.user;
-            navigate('/');
+          
             console.log(user);
         })
         .catch(err=>console.log(err))
@@ -30,16 +30,27 @@ const Signin = () => {
         })
         .then(res=>res.json())
         .then(imageData=>{
-            if(imageData.sucess){
-                userUpdata(data.name,imageData.data.url)
+            console.log(imageData);
+            if(imageData.success){
+
+                const userInfo={
+                    displayName:data.name,
+                    photoURL:imageData.data.url
+                }
+                userUpdata(userInfo)
                 .then(()=>{
+                    navigate('/');
+                    setLoading(false);
                 })
-                .catch(error=>console.log(error));
+                .catch(error=>{
+                    console.log(error);
+                    setLoading(false);
+                });
                 
             }
         })
         .catch(error=>console.log(error))
-         setLoading(false);
+        
     }
     if(loading){
         return <Spinner></Spinner>
