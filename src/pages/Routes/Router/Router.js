@@ -5,9 +5,11 @@ import CountryDetails from "../../CountryDetails/CountryDetails";
 import Home from "../../Home/Home/Home";
 import HomeBanners from "../../Home/HomeBanner/HomeBanners";
 import Login from "../../Login/Login";
+import Package from "../../Package/Package";
 import PackageDetails from "../../PackageDetails/PackageDetails";
 import Packages from "../../Packages/Packages";
 import PlaceAndThingsToDo from "../../PlaceAndThingsToDo/PlaceAndThingsToDo";
+import SerchPackage from "../../SerchPackage/SerchPackage";
 import Signin from "../../Signin/Signin";
 import Spinner from "../../Spinner/Spinner";
 import ThingsTodo from "../../ThingsTodo/ThingsTodo";
@@ -56,7 +58,11 @@ export const router =createBrowserRouter([
             {
                 path:'/booking',
                 element:<PriveteRoute><Bookings></Bookings></PriveteRoute>
-            }
+            },
+            {
+                 path:'/serch',
+                 element:<SerchPackage></SerchPackage>
+            },
         ]
     }
 ])
