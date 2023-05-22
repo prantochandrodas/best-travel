@@ -8,7 +8,7 @@ const CountryDetails = () => {
   const [loading,setLoading]=useState(false);
   useEffect(()=>{
     setLoading(true);
-    fetch('http://localhost:5000/countriesDetails')
+    fetch('https://best-deal-newserver.vercel.app/countriesDetails')
     .then(res=>res.json())
     .then(result=>{
       setDatas(result);

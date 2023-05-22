@@ -8,13 +8,13 @@ import Spinner from '../../Spinner/Spinner';
 
 const HomeBanners = () => {
 
-   
+
     const [loading, SetLoding] = useState(false);
     const [data, setData] = useState([]);
 
     useEffect(() => {
         SetLoding(true);
-        fetch('banner.json')
+        fetch('https://best-deal-newserver.vercel.app/banners')
             .then(res => res.json())
             .then(result => {
                 setData(result);
@@ -40,7 +40,7 @@ const HomeBanners = () => {
         return (
             <div
                 className={className}
-                style={{ ...style, height:'600px' }}
+                style={{ ...style, height: '600px' }}
                 onClick={onClick}
             />
         );
@@ -56,19 +56,20 @@ const HomeBanners = () => {
         autoplay: true,
         autoplaySpeed: 3000,
 
-        nextArrow: <SamplePrevArrow></SamplePrevArrow>
+        nextArrow: <SamplePrevArrow></SamplePrevArrow>,
+        
     };
     return (
-        <div style={{height:'600px!important'}}>
+        <div style={{ height: '600px!important' }}>
             <Slider {...settings}>
                 {
                     data.map(newData => <HomeBanner
                         key={newData._id}
                         newData={newData}
-                        // banner={banner}
+                    // banner={banner}
                     ></HomeBanner>)
                 }
-                
+
             </Slider>
         </div>
     );

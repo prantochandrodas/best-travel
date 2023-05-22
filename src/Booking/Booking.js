@@ -9,7 +9,7 @@ const Booking = ({data,handelDelete}) => {
     
     return (
         <div>
-            <div className="flex my-4 lg:max-w-md w-[90%] mx-auto overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
+            <div className="flex my-4 lg:w-[500px] w-[90%] mx-auto overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
                 <div className="lg:w-1/2 w-1/2 bg-cover"  style={{backgroundImage:`url(${data.picture})`}}></div>
                 <div className="w-2/3 p-4 md:p-4">
                     <h1 className="lg:text-xl font-bold text-gray-800 dark:text-white">{data.name}</h1>

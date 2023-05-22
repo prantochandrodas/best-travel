@@ -10,14 +10,14 @@ const Bookings = () => {
     const { data: datas = [], isLoading,refetch } = useQuery({
         queryKey: ['users'],
         queryFn: async () => {
-            const res = await fetch(`http://localhost:5000/bookings?email=${user?.email}`);
+            const res = await fetch(`https://best-deal-newserver.vercel.app/bookings?email=${user?.email}`);
             const data = await res.json();
             return data;
         }
     });
 
     const handelDelete=(id)=>{
-        fetch(`http://localhost:5000/Deletebookings/${id}`,{
+        fetch(`https://best-deal-newserver.vercel.app/Deletebookings/${id}`,{
             method:'DELETE',
         })
         .then(res=>res.json())

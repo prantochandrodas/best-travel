@@ -8,7 +8,7 @@ const Packages = () => {
     console.log(datas);
     useEffect(() => {
         setLoading(true);
-        fetch(`http://localhost:5000/package`)
+        fetch(`https://best-deal-newserver.vercel.app/package`)
             .then(res => res.json())
             .then(result => {
                 setDatas(result)
@@ -19,9 +19,9 @@ const Packages = () => {
     if (loading) {
         return <Spinner></Spinner>
     }
-    // console.log(datas.result);
+     console.log(datas.result);
     return (
-        <div className='w-[90%] mx-auto grid lg:grid-cols-3 grid-cols-1 md:grid-cols-2 gap-[20px]'>
+        <div className='w-[90%] mx-auto grid  lg:grid-cols-3 grid-cols-1 md:grid-cols-2 gap-[20px]'>
             {
                 datas?.result?.map(data => <Package
                     key={data._id}

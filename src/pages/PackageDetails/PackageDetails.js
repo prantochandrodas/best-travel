@@ -10,7 +10,7 @@ const PackageDetails = () => {
     console.log(datas)
     const [loading, SetLoading] = useState(false);
     useEffect(() => {
-        fetch('http://localhost:5000/packageDetails')
+        fetch('https://best-deal-newserver.vercel.app/packageDetails')
             .then(res => res.json())
             .then(request => setDatas(request));
     }, []);
@@ -32,7 +32,7 @@ const PackageDetails = () => {
             hotel:data.hotel
         }
         console.log(booking);
-        fetch('http://localhost:5000/addBooking', {
+        fetch('https://best-deal-newserver.vercel.app/addBooking', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',

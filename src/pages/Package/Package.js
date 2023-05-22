@@ -16,7 +16,7 @@ const Package = ({data}) => {
                     <h3 className='text-xl my-4'>
                     Price: ${data.Price}
                     </h3>
-                    <Link to='/packageDetails' onClick={()=>setPackageId(data.Package_id)}> <button className='btn btn-primary'>Details</button> </Link>
+                    <Link to='/packageDetails' onClick={()=>setPackageId(data.Package_id)}> <button className='inline-block text-white rounded bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-[6px] hover:text-white focus:outline-none focus:ring active:text-opacity-75'>Details</button> </Link>
                 </div>
             </article>
         </div>

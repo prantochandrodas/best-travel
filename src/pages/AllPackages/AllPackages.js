@@ -13,7 +13,7 @@ const AllPackages = () => {
     // console.log(size);
     useEffect(() => {
         setLoading(true);
-        fetch(`http://localhost:5000/allpackage?page=${page}&size=${size}`)
+        fetch(`https://best-deal-newserver.vercel.app/allpackage?page=${page}&size=${size}`)
             .then(res => res.json())
             .then(result => {
                 setDatas(result)

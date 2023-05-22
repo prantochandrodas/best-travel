@@ -9,7 +9,7 @@ const Countries = () => {
     const [loading, setLoading] = useState(false);
     useEffect(() => {
         setLoading(true);
-        fetch('http://localhost:5000/countries')
+        fetch('https://best-deal-newserver.vercel.app/countries')
             .then(res => res.json())
             .then(result => {
                 setDatas(result);
@@ -39,7 +39,7 @@ const Countries = () => {
             />
         );
     }
-   
+
     const settings = {
         dots: true,
         className: "center",
@@ -68,14 +68,16 @@ const Countries = () => {
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    initialSlide: 1
+                    initialSlide: 1,
+                    centerMode: false,
                 }
             },
             {
                 breakpoint: 480,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+                    centerMode: false,
                 }
             }
         ]
@@ -135,7 +137,7 @@ const Countries = () => {
                     }
                 </Slider>
             </div>
-           
+
             <div className='lg:mb-10'>
                 <Slider {...settings2}>
                     {

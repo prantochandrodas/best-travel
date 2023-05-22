@@ -57,7 +57,7 @@ const Navbar = () => {
                         {menu}
                     </ul>
                 </div>
-                <div className="hidden md:inline-block">
+                <div className={`md:inline-block ${state ? 'block' : 'hidden'}`}>
                     {
                         user?.uid ? <button className="btn bg-[orange] btn-sm" onClick={handelLogout}>Logout</button> : <>
                             <Link to='/signup'><button className="btn bg-[orange] btn-sm" onClick={() => setState(!state)}>SignUp</button> </Link>
