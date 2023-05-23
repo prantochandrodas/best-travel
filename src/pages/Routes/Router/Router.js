@@ -9,6 +9,7 @@ import Package from "../../Package/Package";
 import PackageDetails from "../../PackageDetails/PackageDetails";
 import Packages from "../../Packages/Packages";
 import PlaceAndThingsToDo from "../../PlaceAndThingsToDo/PlaceAndThingsToDo";
+import Reviews from "../../Reviews/Reviews";
 import SerchPackage from "../../SerchPackage/SerchPackage";
 import Signin from "../../Signin/Signin";
 import Spinner from "../../Spinner/Spinner";
@@ -63,6 +64,10 @@ export const router =createBrowserRouter([
                  path:'/serch',
                  element:<SerchPackage></SerchPackage>
             },
+            {
+                path:'/review',
+                element:<Reviews></Reviews>
+            }
         ]
     }
 ])

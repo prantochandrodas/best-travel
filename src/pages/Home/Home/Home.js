@@ -5,6 +5,7 @@ import Countries from '../../Countries/Countries';
 import PlaceAndThingsToDo from '../../PlaceAndThingsToDo/PlaceAndThingsToDo';
 import About from '../../About/About';
 import Packages from '../../Packages/Packages';
+import Contact from '../../Contact/Contact';
 
 const Home = () => {
     return (
@@ -14,6 +15,7 @@ const Home = () => {
             <PlaceAndThingsToDo></PlaceAndThingsToDo>
             <Packages></Packages>
             <About></About>
+            <Contact></Contact>
         </div>
     );
 };

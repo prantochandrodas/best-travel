@@ -11,7 +11,7 @@ const SerchPackage = () => {
     const navigate = useNavigate();
     useEffect(() => {
         setLoading(true);
-        fetch(`http://localhost:5000/serch/${getText}`)
+        fetch(`https://best-deal-newserver.vercel.app/serch/${getText}`)
             .then(res => res.json())
             .then(result => {
                 setDatas(result);
