@@ -11,11 +11,11 @@ const Country = ({ data }) => {
     
     return (
         <Link to={`/countryDetails`} onClick={()=>setcountryId(data.Country_id)}>
-            <a href="#" class="block w-[90%] lg:w-full mx-auto">
+            <a href="#" class="block w-[90%]  mx-auto">
                 <img
                     alt="Signage"
                     src={data.picture}
-                    class="h-56 lg:w-[90%] w-[95%] rounded-bl-3xl rounded-tr-3xl object-cover sm:h-64 lg:h-72"
+                    class="lg:w-[300px] lg:h-[169px] w-[95%] h-[250px] rounded-bl-3xl rounded-tr-3xl object-cover sm:h-64 lg:h-72"
                 />
 
                 <div class="mt-4  sm:items-center sm:justify-center sm:gap-4">

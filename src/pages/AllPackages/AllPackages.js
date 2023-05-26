@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import Spinner from '../Spinner/Spinner';
 import Package from '../Package/Package';
+import AllPackage from '../AllPackage/AllPackage';
 
 const AllPackages = () => {
     const [datas, setDatas] = useState([]);
     const [loading, setLoading] = useState(false);
 
     const [page, setPage] = useState(0);
-    const [size, setSize] = useState(3);
+    const [size, setSize] = useState(4);
     const newpages = Math.ceil(datas.count / size);
-     console.log(newpages);
-    // console.log(size);
+     console.log(datas.count);
     useEffect(() => {
         setLoading(true);
         fetch(`https://best-deal-newserver.vercel.app/allpackage?page=${page}&size=${size}`)
@@ -26,12 +26,12 @@ const AllPackages = () => {
     }
     return (
         <div>
-            <div className='w-[90%] mx-auto grid lg:grid-cols-3 grid-cols-1 md:grid-cols-2 gap-[20px]'>
+            <div className='w-[90%] mx-auto grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 md:grid-cols-2 gap-[20px]'>
                 {
-                    datas?.result?.map(data => <Package
+                    datas?.result?.map(data => <AllPackage
                         key={data._id}
                         data={data}
-                    ></Package>)
+                    ></AllPackage>)
                 }
             </div>
             <div className='w-[90%] mx-auto my-4'>
@@ -42,6 +42,7 @@ const AllPackages = () => {
                 </div>):
                   <></>
                 }
+                
             </div>
         </div>
     );

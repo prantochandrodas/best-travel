@@ -6,14 +6,18 @@ import PlaceAndThingsToDo from '../../PlaceAndThingsToDo/PlaceAndThingsToDo';
 import About from '../../About/About';
 import Packages from '../../Packages/Packages';
 import Contact from '../../Contact/Contact';
+import Features from '../../Features/Features';
+import HomeBlogs from '../../HomeBlogs/HomeBlogs';
 
 const Home = () => {
     return (
         <div>
             <HomeBanners></HomeBanners>
             <Countries></Countries>
-            <PlaceAndThingsToDo></PlaceAndThingsToDo>
             <Packages></Packages>
+            <PlaceAndThingsToDo></PlaceAndThingsToDo>
+            <Features></Features>
+            <HomeBlogs></HomeBlogs>
             <About></About>
             <Contact></Contact>
         </div>

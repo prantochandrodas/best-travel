@@ -54,7 +54,7 @@ const PlaceAndThingsToDo = () => {
             {
                 breakpoint: 1024,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 3,
                     slidesToScroll: 1,
                     infinite: true,
                     centerMode: true,
@@ -84,10 +84,10 @@ const PlaceAndThingsToDo = () => {
         return <Spinner></Spinner>
     }
     return (
-        <div className='flex my-10 flex-col lg:flex-row'>
+        <div className='flex lg:border  lg:my-10 my-4 flex-col lg:flex-row  text-white'>
             <ThingsTodo></ThingsTodo>
           
-         <div className='lg:w-[60%] md:w-[60%] w-[100%]'>
+         <div className='lg:w-[60%] md:w-[100%] w-[100%]'>
          <Slider {...settings}>
                 {
                     datas.map(data => <Places

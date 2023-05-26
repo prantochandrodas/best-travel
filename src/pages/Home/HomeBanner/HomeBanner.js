@@ -10,11 +10,11 @@ const HomeBanner = ({newData,banner}) => {
     
     // console.log(banner);
     return (
-        <div className='lg:pt-32 pb-10 lg:pb-40'   style={{backgroundImage:`url(${newData.picture})`,backgroundSize:'100% 550px',backgroundRepeat:"no-repeat"}}>
+        <div className='lg:pt-32 pb-32 lg:pb-40'   style={{backgroundImage:`url(${newData.picture})`,backgroundSize:'100% 550px',backgroundRepeat:"no-repeat"}}>
             <section>
                 <div className="max-w-screen-xl mx-auto lg:ml-20 text-gray-600 gap-x-12 items-center overflow-hidden md:flex md:px-8">
                     <div className="flex-none space-y-5 px-4 sm:max-w-lg md:px-0 lg:max-w-xl">
-                        <h2 className="text-4xl text-[#FFAC7F] font-extrabold md:text-5xl mt-10 lg:mt-0">
+                        <h2 className="lg:text-4xl  md:text-3xl text-2xl text-[#FFAC7F] font-extrabold md:text-5xl mt-10 lg:mt-0">
                         {newData?.title}
                         </h2>
                         <p className='text-white'>

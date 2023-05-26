@@ -7,11 +7,11 @@ const Places = ({data}) => {
     }
     return (
         <div>
-            <Link to='countryDetails' onClick={()=>setcountryId(data.Country_id)} class="group w-[80%] mx-auto  lg:w-full relative block group-hover:bg-black">
+            <Link to='countryDetails' onClick={()=>setcountryId(data.Country_id)} class="group h-[300px] lg:h-full  w-[80%] mx-auto  lg:w-full relative block">
                 <img
                     alt="Developer"
                     src={data.picture}
-                    class="absolute inset-0 lg:h-[600px] lg:w-[320px]  w-[100%] object-cover opacity-75 transition-opacity group-hover:opacity-50"
+                    class="absolute inset-0 lg:h-[700px] md:h-[500px] h-[500px]  lg:w-[320px]  w-[100%] object-cover opacity-75 transition-opacity group-hover:opacity-50"
                 />
 
                 <div class="relative p-4 sm:p-6 lg:p-8">
@@ -22,7 +22,7 @@ const Places = ({data}) => {
                         <div
                             class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100 "
                         >
-                            <p class="text-sm text-black">
+                            <p class="text-sm text-white">
                                {data.headline}
                             </p>
                         </div>

@@ -14,7 +14,7 @@ const MiniCategories = ({ data }) => {
                     <img src={data.picture} />
                 </div>
             </div>
-            <p className='ml-4 font-bold'>{data.Country_name}</p>
+            <p className='ml-4 font-bold text-black'>{data.Country_name}</p>
         </div></Link>
         
     );

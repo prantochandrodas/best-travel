@@ -1,6 +1,7 @@
 .NavSticky{
     /* background:linear-gradient(to right, #1a2a6c, #b21f1f, #1a2a6c); */
     background-color: #212121;
+    /* background-color: rgba(255,255,255,255); */
     z-index:2;
     position: sticky;
     top: 0;

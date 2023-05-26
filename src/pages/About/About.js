@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom';
 const About = () => {
     return (
         <div>
-            <section className="pt-28">
+            <section className="pt-10">
                 <div className="max-w-screen-xl mx-auto text-gray-600 gap-x-12 items-center justify-between overflow-hidden md:flex md:px-8">
                     <div className="flex-none space-y-5 px-4 sm:max-w-lg md:px-0 lg:max-w-xl">
-                        <h2 className="text-4xl text-gray-800 font-extrabold md:text-5xl">
+                        <h2 className="text-4xl text-white font-extrabold md:text-5xl">
                             ABOUT
                         </h2>
-                        <p>
+                        <p className="opacity-50 text-white">
                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cum corrupti animi? Obcaecati doloribus quisquam excepturi laboriosam facilis! Dolore minus deserunt consequuntur a perspiciatis rem totam, sint voluptatem tempore.
                         </p>
                         <div className="items-center gap-x-3 space-y-3 sm:flex sm:space-y-0">
@@ -25,7 +25,7 @@ const About = () => {
                     <div className="flex-none mt-14 md:mt-0 md:max-w-xl">
                         <img
                             src="https://static.saltinourhair.com/build/images/saltinourhair-travel-couple-blog.jpg"
-                            className=" md:rounded-tl-[108px]"
+                            className="md:rounded-tl-[108px] lg:h-[400px]"
                             alt=""
                         />
                     </div>
