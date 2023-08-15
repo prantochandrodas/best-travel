@@ -6,30 +6,30 @@
 body {
   /* background-image: linear-gradient( 111.4deg,  rgba(7,7,9,1) 6.5%, rgba(27,24,113,1) 93.2% ); */
   /* background-image: linear-gradient( 179deg,  rgba(0,0,0,1) 9.2%, rgba(127,16,16,1) 103.9% ); */
-/* background: linear-gradient(to right, #b86464, #556270); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* background: linear-gradient(to right, #b86464, #556270); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 
-  
+
   margin: 0;
-  font-family: 'Tsukimi Rounded' ,BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Tsukimi Rounded', BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-    /* background-color: rgba(230,230,230,255); */
-    /* background-color: background-color: #000000; */
-    /* background-color: #130f40; */
-background-image: linear-gradient(315deg, #000000d2 0%, #000000d2 74%);
-    color: white;
+
+   background-image: linear-gradient(315deg, #000000d2 0%, #000000d2 74%);
+  color: white;  
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
 @media (max-width:480px) {
-  .mobileNavSticky{
-    
+  .mobileNavSticky {
+
     /* background:white;
     z-index:2;
     position: sticky;
@@ -37,6 +37,7 @@ code {
     left: 0;
     right: 0; */
   }
+
   /* .textBlack {
     color: black;
   } */

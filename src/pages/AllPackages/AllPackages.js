@@ -11,15 +11,28 @@ const AllPackages = () => {
     const [size, setSize] = useState(4);
     const newpages = Math.ceil(datas.count / size);
      console.log(datas.count);
+
+
+    useEffect(()=>{
+
+    },[])
+
+
     useEffect(() => {
-        setLoading(true);
+       
         fetch(`https://best-deal-newserver.vercel.app/allpackage?page=${page}&size=${size}`)
             .then(res => res.json())
             .then(result => {
                 setDatas(result)
-                setLoading(false);
             })
     }, [page,size]);
+
+
+
+
+
+
+
 
     if (loading) {
         return <Spinner></Spinner>

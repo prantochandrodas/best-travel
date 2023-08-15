@@ -3,6 +3,7 @@ import './App.css';
 import { router } from './pages/Routes/Router/Router';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import DarkModeToggle from './pages/DarkModeToggle/DarkModeToggle';
 function App() {
      
   return (

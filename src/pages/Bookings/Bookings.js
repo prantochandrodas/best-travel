@@ -15,7 +15,6 @@ const Bookings = () => {
             return data;
         }
     });
-
     const handelDelete=(id)=>{
         fetch(`https://best-deal-newserver.vercel.app/Deletebookings/${id}`,{
             method:'DELETE',

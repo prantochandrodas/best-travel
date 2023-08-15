@@ -91,6 +91,7 @@ const Packages = () => {
      console.log(datas.result);
     return (
         <div className='text-white'>
+            <h1 className='lg:text-3xl text-xl text-center'>Packages</h1>
             <div className='w-[90%] mx-auto '>
            <Slider {...settings}>
             {

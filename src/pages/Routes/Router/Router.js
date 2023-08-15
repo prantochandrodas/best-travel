@@ -4,6 +4,8 @@ import Bookings from "../../Bookings/Bookings";
 import CountryDetails from "../../CountryDetails/CountryDetails";
 import Home from "../../Home/Home/Home";
 import HomeBanners from "../../Home/HomeBanner/HomeBanners";
+import Allblogs from "../../HomeBlogs/Allblogs";
+import SingelBlog from "../../HomeBlogs/SingelBlog";
 import Login from "../../Login/Login";
 import Package from "../../Package/Package";
 import PackageDetails from "../../PackageDetails/PackageDetails";
@@ -67,6 +69,15 @@ export const router =createBrowserRouter([
             {
                 path:'/review',
                 element:<Reviews></Reviews>
+            },
+            {
+                path:`/blogsById/:id`,
+                element:<SingelBlog></SingelBlog>,
+                loader:({params})=>fetch(`https://best-deal-newserver.vercel.app/blogsById/${params.id}`)
+            },
+            {
+                path:'/allBlogs',
+                element:<Allblogs></Allblogs>  
             }
         ]
     }

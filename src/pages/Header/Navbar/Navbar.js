@@ -24,6 +24,7 @@ const Navbar = () => {
     const menu = <>
         <Link to='/' onClick={() => setState(!state)}> <li className='lg:ml-5 text-lg lg:mt-0 mt-4  font-[500]'>Home</li></Link>
         <Link to='/allPackage' onClick={() => setState(!state)}> <li className='lg:ml-5 text-lg lg:mt-0 mt-4 font-[500]'>All-Packages</li></Link>
+        <Link to='/allBlogs' onClick={() => setState(!state)}> <li className='lg:ml-5 text-lg lg:mt-0 mt-4 font-[500]'>Blogs</li></Link>
         <Link to='/booking' onClick={() => setState(!state)}> <li className='lg:ml-5 text-lg lg:mt-0 mt-4 font-[500]'>Booking</li></Link>
     </>
 

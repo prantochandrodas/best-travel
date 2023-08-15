@@ -8,7 +8,10 @@ import Packages from '../../Packages/Packages';
 import Contact from '../../Contact/Contact';
 import Features from '../../Features/Features';
 import HomeBlogs from '../../HomeBlogs/HomeBlogs';
-
+import OurTeam from '../../OurTeam/OurTeam';
+import Cta from '../../Cta/Cta';
+import CurrencyConverter from '../../CurrencyConverter/CurrencyConverter';
+import Reviews from '../../Reviews/Reviews';
 const Home = () => {
     return (
         <div>
@@ -18,6 +21,7 @@ const Home = () => {
             <PlaceAndThingsToDo></PlaceAndThingsToDo>
             <Features></Features>
             <HomeBlogs></HomeBlogs>
+            <Reviews></Reviews>
             <About></About>
             <Contact></Contact>
         </div>

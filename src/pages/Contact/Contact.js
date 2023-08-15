@@ -47,7 +47,9 @@ const Contact = () => {
       };
     return (
         <div>
-            <div  id='Contact' className="grid max-w-screen-xl grid-cols-1 gap-8 px-8 pt-16 mx-auto md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 border-t mt-4 text-gray-100">
+            <p className='text-center mt-10 font-semibold text-2xl'>Contect Us</p>
+            <div  id='Contact' className="grid max-w-screen-xl grid-cols-1 gap-8 px-8 pt-16 mx-auto md:grid-cols-2 md:px-12 lg:px-16 xl:px-32  text-gray-100">
+               
                 <div data-aos="zoom-in" data-aos-duration="1000" className="flex flex-col justify-between">
                     <div className="space-y-2">
                         <h2 className="text-4xl font-bold leading-tight lg:text-5xl">Let's talk!</h2>

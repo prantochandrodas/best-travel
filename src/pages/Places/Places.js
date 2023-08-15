@@ -7,7 +7,7 @@ const Places = ({data}) => {
     }
     return (
         <div>
-            <Link to='countryDetails' onClick={()=>setcountryId(data.Country_id)} class="group h-[300px] lg:h-full  w-[80%] mx-auto  lg:w-full relative block">
+            <Link to='countryDetails' onClick={()=>setcountryId(data.Country_id)} class="group h-[300px] lg:h-full  w-[80%] mx-auto  lg:w-[90%] relative block">
                 <img
                     alt="Developer"
                     src={data.picture}

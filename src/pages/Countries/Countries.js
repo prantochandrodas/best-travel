@@ -126,7 +126,8 @@ const Countries = () => {
 
     };
     return (
-        <div>
+        <div className='my-10'>
+            <h1 className='lg:text-3xl text-xl text-center'>Destinations</h1>
             <div className='my-10 lg:block none'>
                 <Slider {...settings}>
                     {

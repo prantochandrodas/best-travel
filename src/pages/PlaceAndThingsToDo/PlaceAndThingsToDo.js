@@ -87,7 +87,7 @@ const PlaceAndThingsToDo = () => {
         <div className='flex lg:border  lg:my-10 my-4 flex-col lg:flex-row  text-white'>
             <ThingsTodo></ThingsTodo>
           
-         <div className='lg:w-[60%] md:w-[100%] w-[100%]'>
+         <div className='lg:w-[55%] md:w-[100%] w-[100%]'>
          <Slider {...settings}>
                 {
                     datas.map(data => <Places

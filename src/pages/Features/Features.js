@@ -1,5 +1,6 @@
 import React from 'react';
-
+import './Features.css'
+import Slider from 'react-slick';
 const Features = () => {
     const features = [
         {
@@ -51,44 +52,98 @@ const Features = () => {
             desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius, enim ex faucibus purus."
         },
     ]
+
+    function SampleNextArrow(props) {
+        const { className, style, onClick } = props;
+        return (
+            <div
+                className={className}
+                style={{ ...style, color: "" ,backgroundColor:'' }}
+                onClick={onClick}
+            />
+        );
+    }
+    function SamplePrevArrow(props) {
+        const { className, style, onClick } = props;
+        return (
+            <div
+                className={className}
+                style={{ ...style, display: "" }}
+                onClick={onClick}
+            />
+        );
+    }
+
+    const settings = {
+        dots: true,
+        className: "center",
+        centerMode: true,
+        infinite: true,
+        centerPadding: "30px",
+        slidesToShow: 3,
+        slidesToScroll: 2,
+        speed: 300,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        nextArrow: <SampleNextArrow></SampleNextArrow>,
+        prevArrow: <SamplePrevArrow></SamplePrevArrow>,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    initialSlide: 1,
+                    centerMode: false,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    centerMode: false,
+                }
+            }
+        ]
+
+    };
+
     return (
-        <div>
-            <section className="py-14">
-                <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
-                    <div className="max-w-xl mx-auto space-y-3 sm:text-center">
-                        <h3 className="text-indigo-600 font-semibold">
-                            Features
-                        </h3>
-                        <p className="text-white text-3xl font-semibold sm:text-4xl">
-                            Let's know our features 
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius, enim ex faucibus purus
-                        </p>
-                    </div>
-                    <div className="mt-12">
-                        <ul className="grid gap-y-8 gap-x-12 sm:grid-cols-2 lg:grid-cols-3">
-                            {
-                                features.map((item, idx) => (
-                                    <li key={idx} className="flex gap-x-4">
-                                        <div className="flex-none w-12 h-12 bg-indigo-50 text-indigo-600 rounded-lg flex items-center justify-center">
-                                            {item.icon}
-                                        </div>
-                                        <div>
-                                            <h4 className="text-lg text-white font-semibold">
-                                                {item.title}
-                                            </h4>
-                                            <p className="mt-3 text-white opacity-50">
-                                                {item.desc}
-                                            </p>
-                                        </div>
-                                    </li>
-                                ))
-                            }
-                        </ul>
-                    </div>
+        <div className='w-[80%] lg:w-full mx-auto'>
+            {/* 
+            <div className='lg:grid lg:grid-cols-3 lg:gap-10 w-[90%] mx-auto'>
+               
+
+            </div> */}
+            <h1 className='text-white font-bold text-center text-3xl'>Features</h1>
+             <div className='my-10 lg:block none lg:w-[90%]  mx-auto'>
+                    <Slider {...settings}>
+                        {
+                            features.map(data => <div className="card1">
+                                <h3>{data.title}</h3>
+                                <div className='text-white'>
+                                    {data.icon}
+                                </div>
+                                <p className="small">{data.desc}</p>
+                                <div className="go-corner" href="#">
+                                    <div className="go-arrow">
+                                        →
+                                    </div>
+                                </div>
+                            </div>)
+                        }
+                    </Slider>
                 </div>
-            </section>
         </div>
     );
 };
